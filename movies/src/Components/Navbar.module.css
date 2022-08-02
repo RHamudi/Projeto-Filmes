@@ -34,4 +34,11 @@
     font-size: 1.3rem;
     display: flex;
     align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.navbar form button:hover {
+    background-color: transparent;
+    color: #FFE801;
 }

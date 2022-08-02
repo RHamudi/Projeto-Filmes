@@ -1,0 +1,49 @@
+.Card {
+    width: 30%;
+    color: white;
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #111;
+    padding: 1rem;
+    
+}
+
+.Card img {
+    max-width: 100%;
+}
+
+.Card img,
+.Card p,
+.Card h2 {
+    margin-bottom: 1rem;
+}
+
+.Card svg {
+    color: #FFE801;
+}
+
+
+
+.Card a {
+    background-color: #FAF789;
+    border: 2px solid #FAF789;
+    border-radius: 4px;
+    color: black;
+    width: 50%;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.3rem;
+    align-items: center;
+    transition: 0.4s;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.Card a:hover {
+    background-color: transparent;
+    color: #FFE801;
+}
