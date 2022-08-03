@@ -19,10 +19,10 @@ function Movie() {
   useEffect(() => {
     const movieUrl = `${API_URL}${id}?${API_KEY}`;
     getMovie(movieUrl);
-  }, []);
+  }, [id]);
 
   return (
-    <div className={styles.moviePage}>
+    <div>
       {movie && (
         <>
           <MovieCardSingle movie={movie} showLink={false} />

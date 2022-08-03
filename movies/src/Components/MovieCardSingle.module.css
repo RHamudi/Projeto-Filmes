@@ -1,5 +1,5 @@
 .Card {
-    width: 30%;
+    width: 50%;
     color: white;
     margin-bottom: 2.5rem;
     display: flex;
@@ -7,11 +7,12 @@
     justify-content: space-between;
     background-color: #111;
     padding: 1rem;
-    
+    margin: auto;
 }
 
 .Card img {
-    max-width: 100%;
+    max-width: 80%;
+    margin: auto;
 }
 
 .Card img,
@@ -47,3 +48,4 @@
     background-color: transparent;
     color: #FFE801;
 }
+
