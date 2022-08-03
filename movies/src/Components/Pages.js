@@ -3,18 +3,20 @@ import { FcNext, FcPrevious } from 'react-icons/fc'
 
 function Pages({setPages, pages}) {
     function pageUp() {
-        setPages(3)
+        setPages(pages + 1)
     }
 
     function pageDown() {
-        setPages(1)
+        if(pages !== 1) {
+            setPages(pages - 1)
+        }
     }
 
     return (
         <section className={styles.component}>
-            <div onClick={pageDown}><FcPrevious/></div>
-            <div>{pages}</div>
-            <div onClick={}><FcNext/></div>
+            <button className={styles.pages} onClick={pageDown}><FcPrevious/></button>
+            <div className={styles.pagesCount} >Pagina: {pages}</div>
+            <button className={styles.pages} onClick={pageUp}><FcNext/></button>
         </section>
     )
 }

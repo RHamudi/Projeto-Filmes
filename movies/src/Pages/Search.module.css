@@ -2,13 +2,13 @@
     color: white;
     font-size: 2.5rem;
     text-align: center;
-    margin: 2rem 0 1rem;
+    margin: 5rem 0 1rem 0;
 }
 
 .moviesContainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -16,4 +16,9 @@
 
 .container p {
     color: white;
+}
+
+.query {
+    display: inline-block;
+    color: #FFE801;
 }

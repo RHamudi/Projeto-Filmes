@@ -1,3 +1,37 @@
 .component {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 30%;
+    background-color: #383838;
+    padding: 0.7rem;
+    border-radius: 40px;
+    margin-bottom: 40px;
+}
+
+.pages {
+    padding: 7px 10px;
+    margin: 10px;
+    background-color: #FAF789;
+    border-radius: 4px;
+    transition: 0.5s;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pages svg {
+    font-size: 1.5rem;
+}
+
+.pages:hover {
+    background-color: #FFE801;
+}
+
+.pagesCount {
+    font-size: 2rem;
+    color: white;
+    
 }
