@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
+import styles from './Movie.module.css'
+
 import { getMovie } from "../Hooks/useFetch"
 
 import { API_KEY, API_URL } from "../Api";
@@ -16,7 +18,7 @@ function Movie() {
   }, [id]);
 
   return (
-    <div>
+    <div className={styles.divSingle}>
       {movie && (
         <>
           <MovieCardSingle movie={movie} showLink={false} />
