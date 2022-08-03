@@ -2,6 +2,7 @@ export async function getTopRatedMovies(url, setTopMovies) {
     const res = await fetch(url);
     const data = await res.json();
     setTopMovies(data.results);
+    console.log(data)
 }
 
 export async function getMovie(url, setMovie) {
