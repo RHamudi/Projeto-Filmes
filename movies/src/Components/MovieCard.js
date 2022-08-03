@@ -10,7 +10,9 @@ function MovieCard({movie, showLink = true}) {
 
     return (
         <div className={styles.Card}>
+            <div className={styles.divImg}>
             <img src={urlImage + movie.poster_path} alt={movie.title} />
+            </div>
             <h2>{movie.title}</h2>
             <p>
                 <FaStar /> {movie.vote_average}

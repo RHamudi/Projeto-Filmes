@@ -14,7 +14,7 @@ function Search() {
   const query = searchParams.get("q");
 
   useEffect(() => {
-    const searchQueryUrl = `${url}?${key}&query=${query}`;
+    const searchQueryUrl = `${url}?${key}&query=${query}&language=pt-BR`;
     getSearchedMovies(searchQueryUrl, setMovies);
   }, [key, url, query]);
 
