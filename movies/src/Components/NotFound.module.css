@@ -1,0 +1,28 @@
+.notFound {
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 4rem;
+}
+
+.button {
+    background: #FAF789;
+    border: none;
+    padding: 2rem 4rem;
+    font-size: 4rem;
+    border-radius: 2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background: #FFE801;
+    padding: 2.4rem 4.4rem;
+}

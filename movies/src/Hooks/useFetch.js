@@ -10,8 +10,9 @@ export async function getMovie(url, setMovie) {
     setMovie(data);
 }
 
-export async function getSearchedMovies(url, setMovies) {
+export async function getSearchedMovies(url, setMovies, setPagesLength) {
     const res = await fetch(url);
     const data = await res.json();
     setMovies(data.results);
+    setPagesLength(data.total_pages)
 }
