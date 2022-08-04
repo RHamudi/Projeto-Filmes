@@ -4,7 +4,7 @@ import { FcNext, FcPrevious } from "react-icons/fc";
 function Pages({ setPages, pages, movies }) {
   function pageUp() {
     setPages(pages + 1);
-    // window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
   }
 
   function pageDown() {
