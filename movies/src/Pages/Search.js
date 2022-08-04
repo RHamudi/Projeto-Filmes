@@ -22,6 +22,7 @@ function Search() {
     getSearchedMovies(searchQueryUrl, setMovies, setPagesLength);
   }, [key, url, query, pages]);
 
+  if(movies.length === 0) return <p className={styles.ploading}>Carregando...</p>
   if (pages <= pagesLength) return (
     <>
       <div className={styles.container}>
