@@ -29,7 +29,7 @@ function Search() {
           movies.map((movie) => <MovieCard key={movie.id} movie={movie} />)}
       </div>
     </div>
-    <Pages setPages={setPages} pages={pages} />
+    <Pages setPages={setPages} pages={pages} movie={movies} />
     </>
   );
 }
