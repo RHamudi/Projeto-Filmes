@@ -13,7 +13,7 @@ function Search() {
 
   const [searchParams] = useSearchParams();
   const [movies, setMovies] = useState([]);
-  const [pages, setPages] = useState(8);
+  const [pages, setPages] = useState(1);
   const [pagesLength, setPagesLength] = useState(0);
   const query = searchParams.get("q");
 
